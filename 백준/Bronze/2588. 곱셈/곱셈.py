@@ -1,0 +1,11 @@
+A = int(input())
+B = int(input())
+# 첫째 줄부터 넷째 줄까지 차례대로 (3), (4), (5), (6)에 들어갈 값을 출력한다.
+third = A * (B%10)
+forth = A * ((B//10)%10)
+fifth = A * (B//100)
+sixth = third + (forth * 10) + (fifth * 100)
+print(third)
+print(forth)
+print(fifth)
+print(sixth)
